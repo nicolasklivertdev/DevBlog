@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    position: relative;
+    background-color: rgb(245, 245, 245);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-top: 150px;
+    gap: 3rem;
+    max-width: 1280px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    gap: 8px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15), 
+                0 0px 1px rgba(0, 0, 0, 0.05);
+    gap: 0.5rem;
+    width: 60%;
+    background-color: white;
+}
+
+.content:hover {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.span {
+    color: rgb(102, 99, 95);
+}
+
+@media screen and (max-width: 560px) {
+    .content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .content {
+        padding: 2rem 1.7rem;
+        width: 67%;
+    }
+}
